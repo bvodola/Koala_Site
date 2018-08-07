@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <title>Koala Soluções e Tecnologia/ Contato </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bulma CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map">
+
+        <!-- Forms Awesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    </head>
+    
+    <body>
+ 
+    <nav class="navbar is-dark is-fixed-top">
+        <div class="navbar-brand">
+            <!-- Logo -->
+          <a class="navbar-item">
+            <img src="imgs/logo_koala_branco_sem_fundo.png" alt="Logo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="/#home" style="margin-top: 8px;" >
+              Home
+            </a>
+            <a class="navbar-item" href="/contato#contato" style="margin-top: 8px; margin-right: 10px">
+              Contato
+            </a>
+          
+                   
+        </div>
+        </div>
+      </div>
+    </nav>
+
+
+  <section class="hero is-dark is-medium">
+  <!-- Hero head: will stick at the top -->
+    <!-- Hero content: will be in the middle -->
+  <div class="hero-body" id="contato">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        <img src="imgs/logotipo_contato_branco.png" width="300" height="300" alt=>
+      </h1>
+    </div>
+  </div>
+
+  </section>
+
+    <!-- Formulário para o Usuário entrar em contato com a Koala -->
+
+    <section class="section" id="tel_email">
+      <h1 class=" title is-1 has-text-centered">Fale Conosco</h1>
+      <div class="columns" style="margin-top: 10%">
+        <div class="column is-one-third"></div>
+        <div class="column">
+       	<form method="GET" action="app.js">
+         
+          <!--Campo Nome -->
+          <div class="field">
+            <label class="label">Nome</label>
+              <div class="control has-icons-left">
+                <input class="input" id="nome" type="text" placeholder="Ex. José Da Silva">
+                  <span class="icon is-small is-left">
+                     <i class="fas  fa-user"></i>
+                  </span>
+              </div>
+          </div>
+
+          <!-- Campo E-mail -->
+          <div class="field">
+            <label class="label">E-mail</label>
+              <div class="control has-icons-left">
+                <input class="input" id="email" type="email" placeholder="Ex. josedasilva@josedasilva.com.br">
+                  <span class="icon is-small is-left">
+                     <i class="fas  fa-envelope"></i>
+                  </span>
+              </div>
+          </div>
+
+          <!-- Campo Telefone -->
+           <div class="field">
+            <label class="label">Celular</label>
+              <div class="control has-icons-left">
+                <input class="input" id="celular" type="text" placeholder="Ex.(11)9.9999-9999">
+                  <span class="icon is-small is-left">
+                     <i class="fas fa-mobile-alt"></i>
+                  </span>
+              </div>
+          </div> 
+
+          <!-- Campo Assunto -->
+
+          <div class="field">
+              <label class="label" id="assunto">Assunto</label>
+                <div class="control" style="width:100%">
+                   <div class="select" style="width:100%">
+                      <select style="width:100%">
+                          <option>Selecione*</option>
+                          <option>Comercial</option>
+                          <option>Suporte</option>
+                          <option>Ouvidoria</option>
+                          <option>Outros</option>
+                      </select>
+                    </div>
+                </div>
+          </div> 
+        
+          <!-- Campo Mensagem -->
+            <div class="field">
+                <label class="label">Mensagem</label>
+                  <div class="control">
+                     <textarea class="textarea" id="msg" placeholder="Digite a sua mensagem"></textarea>
+                  </div>
+                
+            </div>
+
+          <!-- Botão -->
+            <div class="field-body">
+               <div class="field">
+                 <div class="control">
+                    <button class="button is-success is-medium" type="submit" style="margin-left: 40%">
+                      Enviar
+                    </button>
+                 </div>
+              </div>
+            </div>
+         </form>   
+
+        </div>
+        <div class="column"></div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer is-primary is-dark">
+    <div class="content has-text-centered">
+     <p>
+      <strong>Koala</strong> Soluções e Tecnologia 2018. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+
+
+    </body>
+</html>
