@@ -4,15 +4,14 @@ const express = require('express'); //requerindo o Express.JS
 const path = require ('path')// requerindo o módulo para ter o caminho de sites
 const bodyParser = require('body-parser');
 const app = express(); //realizando funções para servidor
-
 const mailgun = require('mailgun.js');
-const api_key = '50ed972073d94219a78c57acd5c1e6a8-a5d1a068-c049edd3';
+
+const api_key = 'key-50ed972073d94219a78c57acd5c1e6a8-a5d1a068-c049edd3';
 
 const mg = mailgun.client({
-    username: 'Koala ST',
+    username: 'api',
     key: api_key
   });
-
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -27,16 +26,14 @@ app.get('/contato', function (req, res) {
 });
 
 app.post('/contato', function(req,res) {
-
-    mg.messages.create('/contato', {
-      from: "postmaster@sandboxbd6c675d31c24b73ab968b60d71c217a.mailgun.org",
-      to: 'felipebiancalana@outlook.com',
-      subject: req.body.nome+' '+req.body.from+" "+req.body.celular+' '+req.body.subject ,
-      text: req.body.content
+    mg.messages.create('SEU_DOMINIO_NO_MAILGUN', {
+      from: 'FROM',
+      to: 'TO',
+      subject: req.body.nome+' '+req.body.email+" "+req.body.celular+' '+req.body.assunto ,
+      text: req.body.msg
     })
     .then(msg => {console.log(msg); res.sendStatus(200)}) // logs response data
     .catch(err => {console.log(err); res.sendStatus(500)}); // logs any error
-  
   });
 
 

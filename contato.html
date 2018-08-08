@@ -63,13 +63,13 @@
       <div class="columns" style="margin-top: 10%">
         <div class="column is-one-third"></div>
         <div class="column">
-       	<form method="GET" action="app.js">
+       	<form method="POST" action="/contato">
          
           <!--Campo Nome -->
           <div class="field">
             <label class="label">Nome</label>
               <div class="control has-icons-left">
-                <input class="input" id="nome" type="text" placeholder="Ex. José Da Silva">
+                <input class="input" id="nome" name="nome" type="text" placeholder="Ex. José Da Silva">
                   <span class="icon is-small is-left">
                      <i class="fas  fa-user"></i>
                   </span>
@@ -80,7 +80,7 @@
           <div class="field">
             <label class="label">E-mail</label>
               <div class="control has-icons-left">
-                <input class="input" id="email" type="email" placeholder="Ex. josedasilva@josedasilva.com.br">
+                <input class="input" id="email" name="email" type="email" placeholder="Ex. josedasilva@josedasilva.com.br">
                   <span class="icon is-small is-left">
                      <i class="fas  fa-envelope"></i>
                   </span>
@@ -91,7 +91,7 @@
            <div class="field">
             <label class="label">Celular</label>
               <div class="control has-icons-left">
-                <input class="input" id="celular" type="text" placeholder="Ex.(11)9.9999-9999">
+                <input class="input" id="celular" name="celular" type="text" placeholder="Ex.(11)9.9999-9999">
                   <span class="icon is-small is-left">
                      <i class="fas fa-mobile-alt"></i>
                   </span>
@@ -104,7 +104,7 @@
               <label class="label" id="assunto">Assunto</label>
                 <div class="control" style="width:100%">
                    <div class="select" style="width:100%">
-                      <select style="width:100%">
+                      <select style="width:100%" name="assunto">
                           <option>Selecione*</option>
                           <option>Comercial</option>
                           <option>Suporte</option>
@@ -119,7 +119,7 @@
             <div class="field">
                 <label class="label">Mensagem</label>
                   <div class="control">
-                     <textarea class="textarea" id="msg" placeholder="Digite a sua mensagem"></textarea>
+                     <textarea class="textarea" id="msg" name="msg" placeholder="Digite a sua mensagem"></textarea>
                   </div>
                 
             </div>
